@@ -1,0 +1,23 @@
+{
+  "name": "color-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "generate": "babel-node ./scripts/generateColors --config-file ./node-babel-config.js",
+    "build": "npm run generate && node ./scripts/generateHTML",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "lodash": "^4.17.15",
+    "polished": "^3.4.4",
+    "pug": "^2.0.4"
+  }
+}

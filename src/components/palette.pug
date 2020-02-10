@@ -1,0 +1,10 @@
+- const primaryClasses = `bg-${palette[0].baseColor.substring(1)} color-${palette[0].contrast.text}`;
+ul.palette
+  li.colorBlock.primary(class=primaryClasses)= palette[0].baseColor
+  each colorObj in palette
+    - const colorClasses = `bg-${colorObj.baseColor.substring(1)} color-${colorObj.accentColor.substring(1)}`;
+    li.colorBlock(class=colorClasses)
+      span.colorText Aa
+      ul.contrastList
+        each guideline, key in colorObj.contrastGuidelines
+          li= (guideline) ? '●' : '○'

@@ -1,0 +1,5 @@
+node_modules
+public/index.html
+public/colors.css
+src/colors.css
+.DS_Store
