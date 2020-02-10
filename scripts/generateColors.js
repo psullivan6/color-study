@@ -53,7 +53,8 @@ const colorStyles = allHexes
   })
   .join('');
 
-const everyCombo = all
+const everyCombo = _sortBy(all, ['luminance'])
+  .reverse()
   .map(baseColor =>
     all.map(accentColor => ({
       baseColor: baseColor.hex,

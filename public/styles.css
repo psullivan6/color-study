@@ -57,11 +57,28 @@ ul {
   border-radius: 0.25rem;
   font-size: 1rem;
   float: left;
+  cursor: pointer;
+}
+
+.colorBlock:hover {
+  padding: 0.5625rem;
+  border: 1px solid currentColor;
 }
 
 .colorBlock.primary {
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 16.25rem;
   height: 10.625rem;
+}
+
+.colorBlock.primary h1 {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+}
+
+.colorBlock.primary p {
+  margin-top: 0;
 }
 
 .colorText {
